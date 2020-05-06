@@ -2,7 +2,10 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 10vh;
+    height: 100px;
+    width: 98vw;
+    position: fixed;
+    z-index: +2;
 }
 
 /* Large Screens */

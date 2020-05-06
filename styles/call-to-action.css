@@ -1,0 +1,45 @@
+.img-slide{
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    padding-top: 100px;
+}
+
+.service-clickables{
+    height: 30vh;
+}
+
+.text-banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 30%;
+    background-color: rgba(178, 218, 178, 0.8);
+    z-index: +1;
+}
+.text-banner h1{
+    font-size: 2rem;
+}
+
+.contact-button{
+    margin-left: 1rem;
+    background-color: rgb(66, 122, 66);
+    padding: 1rem;
+    border-radius: 16px;
+    color: rgb(178, 218, 178);
+}
+.contact-button:hover{
+    filter: brightness(1.3);
+    cursor: pointer;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: grayscale(0.5) opacity(0.9);
+}
