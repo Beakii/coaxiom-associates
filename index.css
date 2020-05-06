@@ -1,0 +1,21 @@
+/* Imports */
+@import url('styles/nav.css');
+@import url('styles//call-to-action.css');
+/* END Imports */
+
+/* Apply to All */
+*{
+    font-family: 'Quicksand', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: rgb(178, 218, 178);
+}
+/* END Apply to All */
