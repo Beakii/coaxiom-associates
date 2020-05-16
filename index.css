@@ -1,28 +1,105 @@
-/* Imports */
-@import url('styles/nav.css');
-@import url('styles/call-to-action.css');
-@import url('styles/about.css');
-@import url('styles/services.css');
-/* END Imports */
-
-/* Apply to All */
-*{
-    font-family: 'Montserrat', sans-serif;
-    padding: 0;
-    margin: 0;
+:root{
+    --color-one: #c1f6ed;
+    --color-two: #02353c;
+    --color-three: #449352;
+    --color-four: #2eaf7d;
+    --color-five: #3fd0c9;
 }
 
-html{
-    scroll-behavior: smooth;
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
 }
 
 a{
     text-decoration: none;
-    color: black;
+    color: var(--color-one);
 }
 
-body{
-    box-sizing: border-box;
-    background-color: rgb(178, 218, 178);
+h1{
+    font-weight: 300;
+    font-size: 60px;
+    line-height: 1.2;
+    margin-bottom: 15px;
 }
-/* END Apply to All */
+
+.landing{
+    height: 100vh;
+    position: relative;
+}
+
+.landing .image-container{
+    height: 70vh;
+    background-color: black;
+}
+
+.image-container img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.image-container::after{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 30vh;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg,rgba(42, 126, 122, 0) 0%, var(--color-two) 100%);
+    z-index: 50;
+}
+
+.cta-container{
+    position: absolute;
+    color: var(--color-one);
+    left: 10vw;
+    bottom: 60vh;
+    z-index: +100;
+}
+
+.landing .service-buttons{
+    position: absolute;
+    z-index: +5;
+    height: 30vh;
+    width: 100%;
+    background-color: var(--color-two);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.service{
+    width: 15vw;
+    height: 75%;
+
+    text-align: center;
+    padding: 1rem;
+
+    border-radius: 10px;
+    border: 2px solid var(--color-one);
+    color: var(--color-one);
+}
+
+.service h2{
+    color: var(--color-four);
+}
+
+.underline{
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-five);
+    margin-bottom: 0.5rem;
+    margin-top: 0.2rem;
+    z-index: 100;
+}
