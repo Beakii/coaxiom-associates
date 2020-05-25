@@ -5,11 +5,15 @@
 .service{
     text-align: center;
     padding: 1rem;
-    color: var(--color-two);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .service h2{
-    color: var(--color-four);
+    transition: ease-in 500ms;
+    font-size: 1.5rem;
+    color: var(--color-one);
 }
 
 .underline{
@@ -32,20 +36,22 @@
     border-radius: 10px;
     border: solid 2px var(--color-one);
     padding: 1rem;
+    transition: ease-in 200ms;
 }
 
 .button-highlight{
     background-color: var(--color-five);
     color: var(--color-two);
     font-weight: bold;
+    transition: ease-in 200ms;
 }
 
-.service:nth-child(1){
-    background-color: var(--color-one);
-}
-
-.service:nth-child(3){
-    background-color: var(--color-one);
+.cta-button:hover{
+    background-color: var(--color-five);
+    transition: ease-in 500ms;
+    filter: brightness(1.5);
+    color: var(--color-two);
+    font-weight: bold;
 }
 
 
@@ -53,6 +59,10 @@
 @media only screen and (max-width: 425px){
     .image-container{
         display: none;
+    }
+
+    .service h2{
+        color: var(--color-four);
     }
 
     .cta-container{
@@ -81,13 +91,36 @@
     
         margin-top: 15%;
         width: 100%;
+
+        font-size: 0.8rem;
+    }
+
+    .service:nth-child(1){
+        background-color: var(--color-one);
+    }
+
+    .service:nth-child(3){
+        background-color: var(--color-one);
+    }
+
+    .service:nth-child(5){
+        background-color: var(--color-one);
     }
 }
 
 /* Medium screens/Tablet View */
-@media only screen and (max-width: 1024px) and (min-width: 426px){
+@media only screen and (max-width: 1300px) and (min-width: 426px){
     .landing{
         height: 100vh;
+    }
+
+    .section-break{
+        position: relative;
+
+    }
+
+    .service h2{
+        color: var(--color-four);
     }
 
     .image-container{
@@ -113,15 +146,20 @@
         left: 0;
         margin-top: 50vh;
         height: 50vh;
+        width: 100vw;
         grid-template-columns: 50% 50%;
-        grid-template-rows: 50% 50%;
+        grid-template-rows: 1fr 1fr 1fr
     }
 
-    .service:nth-child(3){
-        background-color: white
+    .service:nth-child(1){
+        background-color: var(--color-one);
     }
 
     .service:nth-child(4){
+        background-color: var(--color-one);
+    }
+
+    .service:nth-child(5){
         background-color: var(--color-one);
     }
 
@@ -144,9 +182,9 @@
 }
 
 /* Large screens/Desktop View */
-@media only screen and (min-width: 1025px){
+@media only screen and (min-width: 1301px){
     .landing{
-        height: 98vh;
+        height: 100vh;
     }
 
     .image-container{
@@ -180,6 +218,7 @@
         left: 10vw;
         bottom: 55vh;
         z-index: +100;
+
     }
 
     .button-wrapper{
@@ -209,12 +248,22 @@
     }
     
     .service{
-        width: 20vw;
-        height: 90%;
-
-        border-radius: 16px;
-        border: 2px solid var(--color-one);
+        transition: ease-in 500ms;
+        width: 16vw;
+        height: 60%;
         color: var(--color-one);
+        border-radius: 16px;
+    }
+
+    .service:hover{
+        cursor: pointer;
+        
+        background-color: var(--color-one);
+    }
+
+    .service:hover h2{
+        transition: ease-in 500ms;
+        color: var(--color-four);
     }
 
     .service:nth-child(1) p{
@@ -222,6 +271,10 @@
     }
     
     .service:nth-child(3) p{
+        color: var(--color-two);
+    }
+
+    .service:nth-child(5) p{
         color: var(--color-two);
     }
 }
