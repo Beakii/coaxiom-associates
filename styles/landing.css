@@ -56,7 +56,13 @@
 
 
 /* Small screens/Mobile View */
-@media only screen and (max-width: 425px){
+@media only screen and (max-width: 700px){
+    .service-list{
+        max-width: 90vw;
+        /* Change List Styles */
+        margin-left: 2rem;
+    }
+
     .image-container{
         display: none;
     }
@@ -109,14 +115,23 @@
 }
 
 /* Medium screens/Tablet View */
-@media only screen and (max-width: 1300px) and (min-width: 426px){
+@media only screen and (max-width: 1300px) and (min-width: 701px){
+    .service-text-wrapper{
+        max-width: 50vw;
+    }
+
+    .service-list{
+        max-width: 50vw;
+        /* Change List Styles */
+        margin-left: 2rem;
+    }
+
     .landing{
         height: 100vh;
     }
 
     .section-break{
         position: relative;
-
     }
 
     .service h2{
@@ -128,7 +143,7 @@
         z-index: -1;
         top: 0;
         left: 0;
-        height: 50vh;
+        height: 75vh;
         background-color: var(--color-two);
     }
 
@@ -144,7 +159,7 @@
         position: absolute;
         top: 0;
         left: 0;
-        margin-top: 50vh;
+        margin-top: 75vh;
         height: 50vh;
         width: 100vw;
         grid-template-columns: 50% 50%;
@@ -169,7 +184,7 @@
         justify-content: center;
 
         text-align: center;
-        height: 50vh;
+        height: 65vh;
     }
 
     .button-wrapper{
@@ -183,6 +198,73 @@
 
 /* Large screens/Desktop View */
 @media only screen and (min-width: 1301px){
+    .banner{
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 110px;
+        width: 20px;
+        border-radius: 10px;
+        background-color: var(--color-five);
+        animation: slogan 40s linear infinite;
+    }
+
+    .banner h2{
+        color: var(--color-two);
+        font-size: 1.3rem;
+        animation: sloganText 40s linear infinite;
+    }
+
+    .cta-container h1{
+        margin-top: 2.5%;
+        margin-left: 5%;
+    }
+
+    @keyframes sloganText{
+        0%{
+            opacity: 0;
+        }
+        22%{
+            opacity: 0;
+        }
+        23%{
+            opacity: 1;
+        }
+        33%{
+            opacity: 1;
+        }
+        34%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 0;
+        }
+    }
+    
+    @keyframes slogan {
+        0%{
+            width: 20px;
+        }
+        20%{
+            width: 20px;
+        }
+        21%{
+            width: 700px;
+        }
+        35%{
+            width: 700px;
+        }
+        36%{
+            width: 20px;
+        }
+        100%{
+            width: 20px;
+        }
+    }
+
     .landing{
         height: 100vh;
     }
@@ -215,6 +297,7 @@
     .cta-container{
         position: absolute;
         color: var(--color-one);
+        width: 50%;
         left: 10vw;
         bottom: 55vh;
         z-index: +100;
