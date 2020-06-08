@@ -6,7 +6,7 @@
     padding: 1rem;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -45,7 +45,7 @@
     }
 }
 
-@media only screen and (min-width: 701px) and (max-width: 1300px){
+/* @media only screen and (min-width: 701px) and (max-width: 1300px){
     .section-break{
         margin-top: 25vh;
     }
@@ -53,4 +53,4 @@
     .bottom{
         margin-top: 0;
     }
-}
+} */
