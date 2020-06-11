@@ -1,3 +1,8 @@
+.accented{
+    color: var(--color-five);
+    font-weight: 500;
+}
+
 .service-buttons{
     display: grid;
 }
@@ -8,6 +13,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 100%;
 }
 
 .service h2{
@@ -78,6 +84,7 @@
 
         text-align: center;
         height: 70vh;
+        width: 100vw;
         background-color: var(--color-two);
     }
 
@@ -88,12 +95,31 @@
     }
 
     .service-buttons{
-        grid-template-columns: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .service-row-1{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .service-row-2{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .service{
+        width: 100vw!important;
     }
 
     .button-wrapper{
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-around;
     
         margin-top: 15%;
         width: 100%;
@@ -101,15 +127,15 @@
         font-size: 0.8rem;
     }
 
-    .service:nth-child(1){
+    .service-row-1 .service:nth-child(1){
         background-color: var(--color-one);
     }
 
-    .service:nth-child(3){
+    .service-row-1 .service:nth-child(3){
         background-color: var(--color-one);
     }
 
-    .service:nth-child(5){
+    .service-row-2 .service:nth-child(2){
         background-color: var(--color-one);
     }
 }
@@ -118,6 +144,10 @@
 @media only screen and (max-width: 1300px){
     .cta-container h1{
         font-size: 3rem;
+    }
+
+    .cta-container .accented{
+        font-size: 4rem;
     }
 
     .cta-container .banner{
@@ -131,9 +161,13 @@
         font-size: 2rem;
     }
 
+    .cta-container .accented{
+        font-size: 4rem;
+    }
+
     .cta-container .banner{
-        height: 60px;
-        margin-right: 10px;
+        margin-top: 15px;
+        height: 80px;
     }
 
     .service-buttons{
@@ -154,7 +188,7 @@
     }
 
     .service{
-        width: 30vw!important;
+        width: 30vw;
         height: 10vh!important;
     }
 }
@@ -168,6 +202,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-top: 20px;
         height: 110px;
         width: 20px;
         border-radius: 10px;
@@ -260,7 +295,7 @@
     .cta-container{
         position: absolute;
         color: var(--color-one);
-        width: 50%;
+        width: 80%;
         left: 10vw;
         bottom: 55vh;
         z-index: +100;
@@ -312,7 +347,6 @@
     
     .service{
         transition: ease-in 500ms;
-        width: 16vw;
         height: 60%;
         color: var(--color-one);
         border-radius: 16px;

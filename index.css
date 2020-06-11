@@ -1,5 +1,6 @@
 @import url('styles/landing.css');
 @import url('styles/service-info.css');
+@import url('styles/footer.css');
 
 :root{
     --color-one: #c1f6ed;
