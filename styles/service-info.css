@@ -56,4 +56,8 @@
     .service-text-wrapper{
         width: 100%!important;
     }
+
+    .service-info h1{
+        font-size: 3rem;
+    }
 }

@@ -1,6 +1,7 @@
 @import url('styles/landing.css');
 @import url('styles/service-info.css');
 @import url('styles/footer.css');
+@import url('styles/navbar.css');
 
 :root{
     --color-one: #c1f6ed;
@@ -21,6 +22,8 @@
 body{
     font-family: 'Montserrat', sans-serif;
     line-height: 1.5;
+
+    max-width: 1920px;
 }
 
 p, h1{
