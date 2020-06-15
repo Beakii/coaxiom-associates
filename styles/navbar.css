@@ -3,9 +3,10 @@
     margin: 0;
     position: absolute;
     width: 100%;
-    height: 8vh;
+    height: 50vh;
     z-index: 100;
     max-width: 1920px;
+    overflow: hidden;
 }
 
 .hamburger{
@@ -24,9 +25,6 @@
     transition: all 0.3s ease;
 }
 
-.navbar{
-    overflow-x: hidden;
-}
 .navbar ul {
     z-index: 210;
     position: absolute;
@@ -41,7 +39,7 @@
 
     list-style: none;
     border-radius: 16px 0px 16px 16px;
-    transform: translateX(400%);
+    transform: translateX(100%);
     transition: transform 0.5s ease-in;
 }
 
