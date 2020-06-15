@@ -278,6 +278,7 @@
         object-fit: cover;
         width: 100%;
         height: 100%;
+        max-width: 1920px;
     }
     
     .image-container::after{
@@ -323,6 +324,7 @@
         height: 30vh;
         width: 100%;
         background-color: var(--color-two);
+        max-width: 1920px;
     
         display: flex;
         flex-direction: row;

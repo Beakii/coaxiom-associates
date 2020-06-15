@@ -20,7 +20,7 @@
     height: 25vh;
 }
 
-.service-info .service-text-wrapper{
+.service-info .service-text-wrapper .service-list{
     width: 60%;
 }
 
