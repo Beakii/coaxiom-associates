@@ -5,16 +5,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge;chrome=1"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="assets/favicon.ico">
     <title>Co-Axiom Associates</title>
 </head>
 <body>
     <nav class="navbar">
+
+        <a href="#"><img class="logo" src="assets/logo.png"/></a>
+
         <div class="hamburger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
+            <div class="line-wrapper">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
         </div>
 
         <ul class="nav-links">
@@ -23,6 +29,8 @@
             <li><a href="#">Contact</a></li>
         </ul>
     </nav>
+
+    <div class="inactive-page"></div>
 
     <section class="landing">
         <div class="cta-container">
@@ -83,7 +91,8 @@
     <div class="section-break"></div>
 
     <section id="services-detailed" class="services-detailed">
-        <div id="Recovery" class="service-info">
+        <div class="service-info">
+            <span id="Recovery"></span>
             <div class="service-img">
                 <img src="./assets/service-placeholder.jpg" alt="service-img">
             </div>
@@ -103,7 +112,8 @@
             </div>
         </div>
 
-        <div id="Risk" class="service-info">
+        <div class="service-info anchor">
+            <span id="Risk"></span>
             <div class="service-text-wrapper">
                 <h1>Risk</h1>
                 <p>
@@ -124,7 +134,8 @@
             </div>
         </div>
 
-        <div id="Compliance" class="service-info">
+        <div class="service-info anchor">
+            <span id="Compliance"></span>
             <div class="service-img">
                 <img src="./assets/service-placeholder.jpg" alt="service-img">
             </div>
@@ -145,7 +156,8 @@
             </div>
         </div>
 
-        <div id="Governance" class="service-info">
+        <div class="service-info anchor">
+            <span id="Governance"></span>
             <div class="service-text-wrapper">
                 <h1>Governance</h1>
 
@@ -165,7 +177,8 @@
             </div>
         </div>
 
-        <div id="Audit" class="service-info">
+        <div class="service-info anchor">
+            <span id="Audit"></span>
             <div class="service-img">
                 <img src="./assets/service-placeholder.jpg" alt="service-img">
             </div>
@@ -186,7 +199,8 @@
             </div>
         </div>
 
-        <div id="Mentor" class="service-info">
+        <div class="service-info anchor">
+            <span id="Mentor"></span>
             <div class="service-text-wrapper">
                 <h1>Mentorship Programme</h1>
                 <p>

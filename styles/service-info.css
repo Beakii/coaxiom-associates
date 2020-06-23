@@ -2,8 +2,19 @@
     width: 100%
 }
 
+.service-info span{
+    margin-top: -100px;
+    padding-bottom: 370px;
+    display: block;
+    position: absolute;
+}
+
 .service-text-wrapper ul{
     margin-left: 2rem;
+}
+
+.service-text-wrapper{
+    max-width: 60vw;
 }
 
 .service-info{
@@ -44,7 +55,7 @@
 }
 
 /* Small screens/Mobile View */
-@media only screen and (max-width: 750px){
+@media only screen and (max-width: 1050px){
     .service-info .service-img{
         display: none;
     }
@@ -55,6 +66,7 @@
 
     .service-text-wrapper{
         width: 100%!important;
+        max-width: 100vw;
     }
 
     .service-info h1{

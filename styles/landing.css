@@ -29,9 +29,8 @@
     background-color: var(--color-five);
     margin-bottom: 0.5rem;
     margin-top: 0.2rem;
-    z-index: 100;
+    z-index: 50;
 }
-
 .cta-container{
     color: var(--color-one);
 }
@@ -191,6 +190,10 @@
         width: 30vw;
         height: 10vh!important;
     }
+
+    .banner h2{
+        font-size: 1.5rem!important;
+    }
 }
 
 /* Large screens/Desktop View */
@@ -202,8 +205,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 20px;
-        height: 110px;
+        margin-top: 30px;
+        height: 5rem;
         width: 20px;
         border-radius: 10px;
         background-color: var(--color-five);
@@ -217,8 +220,8 @@
     }
 
     .cta-container h1{
-        margin-top: 2.5%;
-        margin-left: 5%;
+        margin-top: 3%;
+        margin-left: 10%;
     }
 
     @keyframes sloganText{
@@ -250,10 +253,10 @@
             width: 20px;
         }
         25%{
-            width: 700px;
+            width: 100%;
         }
         45%{
-            width: 700px;
+            width: 100%;
         }
         50%{
             width: 20px;
@@ -265,6 +268,22 @@
 
     .landing{
         height: 100vh;
+    }
+
+    .inactive-page{
+        width: 100%;
+        height: 0;
+        transition: ease 0.5s;
+    }
+
+    .landing-dark{
+        position: fixed;
+        z-index: 490;
+        background-color: black;
+        height: 100vh;
+        width: 100%;
+        opacity: 0.7;
+        transition: ease 1.5s;
     }
 
     .image-container{
@@ -296,8 +315,12 @@
     
     .cta-container{
         position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         color: var(--color-one);
-        width: 80%;
+        width: 60%;
         left: 10vw;
         bottom: 55vh;
         z-index: +100;
@@ -307,7 +330,8 @@
     .button-wrapper{
         text-align: center;
         display: flex;
-        margin-top: 10%;
+        justify-content: space-between;
+        margin-top: 5%;
         width: 100%;
         max-width: 700px;
     }
