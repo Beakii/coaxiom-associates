@@ -26,7 +26,7 @@ body{
     max-width: 1920px;
 }
 
-p, h1{
+p, h1, ul{
     max-width: 900px;
     margin: 0 auto;
 }
