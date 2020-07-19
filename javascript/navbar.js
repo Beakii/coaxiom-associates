@@ -32,6 +32,12 @@ const navActive = () => {
         nav.classList.remove('nav-active');
         burger.classList.remove('toggle');
         landing.classList.remove('landing-dark');
+        navLinks.forEach((link, index) => {
+
+            if(link.style.animation){
+                link.style.animation = '';
+            }
+        });
     });
 
 
