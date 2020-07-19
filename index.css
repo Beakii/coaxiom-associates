@@ -2,6 +2,7 @@
 @import url('styles/service-info.css');
 @import url('styles/footer.css');
 @import url('styles/navbar.css');
+@import url('styles/testimonials.css');
 
 :root{
     --color-one: #c1f6ed;

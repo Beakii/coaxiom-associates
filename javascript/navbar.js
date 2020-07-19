@@ -41,6 +41,7 @@ const navActive = () => {
     });
 
 
+    //Adds background color to the navbar when scrolling past 500 pixel from the top of page
     $(window).scroll(function(){
         if ($(this).scrollTop() > 500) {
            $('.navbar').addClass('navbar-dark');
