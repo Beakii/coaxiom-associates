@@ -1,3 +1,12 @@
+.what-we-do-wrapper{
+    text-align: center;
+    color: var(--color-one);
+}
+
+.what-we-do-wrapper i {
+    font-size: 3rem;
+}
+
 .accented{
     color: var(--color-five);
     font-weight: 500;

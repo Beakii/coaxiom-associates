@@ -10,6 +10,20 @@
     padding: 2rem;
     display: grid;
     grid-gap: 5rem;
+    background-color: var(--color-one);
+}
+
+.service-text-wrapper h1{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.service-info{
+    background-color: white;
+    border-radius: 16px;
+    padding: 2rem;
+    color: var(--color-two);
+    box-shadow: 4px 4px 15px rgb(88, 88, 88)
 }
 
 @media only screen and (min-width: 1250px){
