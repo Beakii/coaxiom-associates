@@ -4,18 +4,18 @@ const navActive = () => {
     const navLinks = document.querySelectorAll('.nav-links li')
     const landing = document.querySelector('.inactive-page');
 
-    
-    burger.addEventListener('click', ()=>{
+
+    burger.addEventListener('click', () => {
         //toggle nav
         nav.classList.toggle('nav-active');
-            
+
         //animate links
         navLinks.forEach((link, index) => {
 
-            if(link.style.animation){
+            if (link.style.animation) {
                 link.style.animation = '';
             }
-            else{
+            else {
                 link.style.animation = `navLinkFade 0.5s ease forwards ${index / 5 + 1}s`;
             }
         });
@@ -28,13 +28,13 @@ const navActive = () => {
     });
 
     //disable nav if click on the black box surrounding it
-    landing.addEventListener('click', () =>{
+    landing.addEventListener('click', () => {
         nav.classList.remove('nav-active');
         burger.classList.remove('toggle');
         landing.classList.remove('landing-dark');
         navLinks.forEach((link, index) => {
 
-            if(link.style.animation){
+            if (link.style.animation) {
                 link.style.animation = '';
             }
         });
@@ -42,11 +42,11 @@ const navActive = () => {
 
 
     //Adds background color to the navbar when scrolling past 500 pixel from the top of page
-    $(window).scroll(function(){
-        if ($(this).scrollTop() > 500) {
-           $('.navbar').addClass('navbar-dark');
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 400) {
+            $('.navbar').addClass('navbar-dark');
         } else {
-           $('.navbar').removeClass('navbar-dark');
+            $('.navbar').removeClass('navbar-dark');
         }
     });
 }
